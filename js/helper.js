@@ -166,7 +166,7 @@ function initializeMap() {
       '<div id="firstheading">' + name + '</div>'+
 	  '<div id="secondheading">Coordinates:</div>'+
       '<div id="bodycontent">'+
-      '<p>'+ lat + '</p>'+ '<p>'+ lon + '</p>'+
+      '<p>Lat.: '+ lat + '</p>'+ '<p>Lon.: '+ lon + '</p>'+
       '</div>';
 	
 	// infoWindows are the little helper windows that open when you click
