@@ -9,7 +9,7 @@ var bio = {
 		"location" : "Buvika, Norway"
 		},
 	"welcomeMessage" : "Welcome to my fantastic resume page!<br>On this page I will try to show off my essential skills for you.",
-	"skills" : ["JavaScript","HTML/CSS","JSON","jQuery","PHP","Java","Perl","Visual Basic","MySQL","PostgreSQL","Integration"],
+	"skills" : ["JavaScript","HTML/CSS","JSON","jQuery","PHP","Java","Perl","MySQL","PostgreSQL"],
 	"biopic" : "images/tommy.jpg",
 	"display" : function(){
 		$("#header").append(HTMLbioPic.replace("%data%",bio.biopic));
@@ -184,3 +184,13 @@ work.display();
 projects.display();
 
 $("#mapDiv").append(googleMap);
+
+// Fade In/Out the skills when hovering over
+$( "#skills .white-text" ).hover(
+  function() {
+	$( this ).fadeOut( 400);
+	$( this ).fadeIn( 400);
+  }, function() {
+    // Could probably added more fun in here ;-)
+  }
+);
